@@ -1,0 +1,82 @@
+.mainNv{
+    background-color: rgb(162, 170, 133);
+}
+/*Header design*/
+header{
+    text-align: center;
+    background-color: olive;
+}
+header:hover {
+    background-color: yellowgreen;
+}
+/*Responsive main image*/
+.container{
+    position: relative;
+    width: 50%;
+}
+.mainImg{
+    display: block;
+    width: 50%;
+    height: auto;
+    align-content: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(33, 66, 33);
+}
+.container:hover .overlay {
+    opacity: 2;
+  }
+  
+  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+/* Design for the footer*/
+footer{
+    background:rgb(59, 87, 59);
+    padding: 1em;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(179, 255, 0);
+}
+.footerL {
+    float: right;
+    width: 4%;
+    height: 4%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .Export {
+    width: 40%;
+    height: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    align-items: center;
+}

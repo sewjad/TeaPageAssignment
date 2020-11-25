@@ -1,0 +1,77 @@
+header {
+    text-align: center;
+    background-color: lightgreen;
+}
+header:hover {
+    background-image: url(images/estate1.jpeg);
+}
+/*positioning the container*/
+.container {
+    position: relative;
+    width: 50%;
+}
+/*Making the image responsive*/
+.mainImg{
+    width: 50%;
+    height: auto;
+}
+/*Overlay effect*/
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(73, 122, 102);
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+}
+/*overlay effect when hovering over the image*/
+.container:hover .overlay{
+    transform: scale(1);
+}
+/*Text inside the overlay*/
+.text{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* Design for the footer*/
+footer{
+    background:slategray;
+    padding: 1em;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(134, 19, 19);
+}
+.footerL {
+    float: right;
+    width: 4%;
+    height: 4%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+.Export {
+    width: 50%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    align-items: center;
+}
