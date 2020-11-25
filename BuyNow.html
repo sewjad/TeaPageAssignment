@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name= viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sri Lankan Tea Industry">
+    <title>Tea Industry in Sri Lanka</title>
+    <link rel="Stylesheet" href="Styles/Tea1.css" >
+    <link rel="Stylesheet" href="Styles/Normalize.css" >
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#17635f">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="theme-color" content="#5d5e18">
+</head>
+<body>
+    <div id="container">
+      <nav id="logo">
+        <img src="images/logo.png" alt="logo" class="logo">
+      </nav>
+      <!--Navigation bar-->
+        <nav class="mainNv">
+        <ul>
+            <li><a href="Home.html"><span class="nvtxt">Home</span></a></li>
+            <li><a href="BuyNow.html"><span class="nvtxt">Buy Now</span></a></li>
+            <li><a href="TypesofTea.html"><span class="nvtxt">Types of Tea</span></a></li>
+            <li><a href="SriLankanTeaManufacturers.html"><span class="nvtxt">Sri Lankan Tea Manufacturers</span></a></li>
+            <li><a href="Contactus.html"><span class="nvtxt">Contact us</span></a></li>
+        </ul>
+    </nav>
+    </div>
+    <!--Items to order-->
+    <h2>You can place your order here</h2>
+    <fieldset>
+    <legend><h3>Select a Tea Manufacturer of your choice</h3></legend>
+      
+      <input name="manuf" type="radio" id="man1" class="manufacturer" value="Dilmah Tea">
+      <label for="man1" class="mlabel" ><img src="images/dilmah.jpg" alt="Dilmah Tea" class="dilmahOrder"></label><br>
+      
+      <input name="manuf" type="radio" id="man2" class="manufacturer" value="Jones Tea">
+      <label for="man2" class="mlabel"><img src="images/jones.png" alt="Jones Tea" class="jonesOrder"></label><br>
+      
+      <input name="manuf" type="radio" id="man3" class="manufacturer" value="Steuarts Tea">
+      <label for="man3" class="mlabel"><img src="images/steuarts.jpg" alt="steuarts Tea" class="steuartsOrder"></label><br>
+      
+      <input name="manuf" type="radio" id="man4" class="manufacturer" value="Malwatte Valley Plantation">
+      <label for="man4" class="mlabel"><img src="images/malwatte.jpg" alt="Malwatte valley plantations" class="malwatteOrder"></label><br>
+      
+      <input name="manuf" type="radio" id="man5" class="manufacturer" value="Prestige Tea">
+      <label for="man5" class="mlabel"><img src="images/prestige.jpg" alt="Prestige Ceylon Tea" class="prestigeOrder"></label><br>
+      
+      <input name="manuf" type="radio" id="man6" class="manufacturer" value="Empire Tea">
+      <label for="man6" class="mlabel"><img src="images/empire.jpg" alt="Empire Tea" class="empireOrder"></label><br>
+    </fieldset>
+    <fieldset>
+      <legend><h3>Choose a packaging type</h3></legend>
+      
+      <input name="pack" type="radio" id="pack1" class="package" value="Paper pouch">
+      <label for="pack1" class="plabel"><img src="images/paperPouch.jpg" alt="Paper pouch" class="paperpouch"></label><br>
+      
+      <input name="pack" type="radio" id="pack2" class="package" value="Paper Bag">
+      <label for="pack2" class="plabel"><img src="images/paperBag.jpg" alt="Paper bag" class="paperbag"></label><br>
+      
+      <input name="pack" type="radio" id="pack3" class="package" value="Tin" checked>
+      <label for="pack3" class="plabel"><img src="images/tTin.jpg" alt="Tin" class="tin"></label><br>
+    </fieldset>
+    <fieldset>
+      <legend><h3>Souvenirs</h3></legend>
+      
+      <input name="souvenir" type="checkbox" id="souv1" class="souvenir" value="Mug">
+      <label for="souv1" class="slabel"><img src="images/tMug.jpg" alt="Mug" class="mug"></label><br>
+      
+      <input name="souvenir" type="checkbox" id="souv2" class="souvenir" value="Strainer">
+      <label for="souv2" class="slabel"><img src="images/tStrainer.jpg" alt="Tea strainer" class="strainer"></label><br>
+      
+      <input name="souvenir" type="checkbox" id="souv3" class="souvenir" value="Wooden Souvenir">
+      <label for="souv3" class="slabel"><img src="images/tWooden.jpg" alt="wooden souvenir" class="wooden"></label><br>
+    </fieldset>
+    <fieldset>
+      <legend><h3>Select a size</h3></legend>
+      <input name="size" type="radio" id="sizeS" class="size" value="Small">
+      <label for="sizeS" class="sizel">Small</label><br>
+      <input name="size" type="radio" id="sizeM" class="size" value="Medium" checked>
+      <label for="sizeM" class="sizel">Medium</label><br>
+      <input name="size" type="radio" id="sizeL" class="size" value="Large">
+      <label for="sizeL" class="sizel">Large</label><br>
+    </fieldset>
+      <br></br><br></br>
+      <button id="OrderAdd"><b>Add to order</b></button>
+      <button id="place"><b>Place order</b></button>
+      <button id="favAdd"><b>Add to Favorites</b></button>
+      <button id="favOrder"><b>Order Favourites</b></button>
+      <button id="LoyaltyCheck"><b>Check Loyalty</b></button>
+      <fieldset>
+        <legend><h3>Current Order</h3></legend>
+        <textarea id="brand" disabled>Brand</textarea><br>
+        <textarea id="package" disabled>Package</textarea><br>
+        <textarea id="size" disabled>Size</textarea><br>
+        <span id="mug"></span><br><span id="strainer"></span><br><span id="wooden"></span><br>
+        <textarea id="currentCost" disabled>Current Cost</textarea>
+      </fieldset>
+      <fieldset>
+        <legend><h3>Overall Order</h3></legend>
+        <textarea id="OverallOrder" disabled>Overall Order</textarea><br>
+        <textarea id="totCost" disabled>Total Cost</textarea><br>
+        <textarea id="loyalP" disabled>Loyal Points</textarea><br>
+      </fieldset>
+      
+    <footer>
+      <img src="images/logo.png" alt="logo" class="footerL">
+        <nav>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy and Terms</a></li>
+            <li><a href="#">User Agreement</a></li>
+          </ul>
+        </nav>
+      </footer>
+      <script src="Script/order.js"></script>
+</body>
+</html>
