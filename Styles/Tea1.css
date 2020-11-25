@@ -2,7 +2,8 @@ body{
     background-color: white;
 }
 #container {
-    background: url(./images/estate1.jpeg);
+    background: url(../images/estate1.jpeg);
+    background-size: 100% auto;
     width: 100%;
     height: 100%;
     opacity: 90%;
