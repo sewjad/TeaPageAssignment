@@ -3,7 +3,7 @@ header {
     background-color: lightgreen;
 }
 header:hover {
-    background-image: url(./images/estate1.jpeg);
+    background-image: url(images/estate1.jpeg);
 }
 /*positioning the container*/
 .container {
